@@ -1,4 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&display=swap');
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1000px;
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.header__blue-box {
+    height: 544px;
+    background-color: rgba(199, 221, 234, 1);
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+    background-image: url("grupparbete-examination-main/img/family.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom right;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__blue-box h1 {
+    font-family: "Frank Ruhl Libre";
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    width: 314px;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    
+
+}
+
+.header__blue-box p {
+    font-family: "Fira sans";
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 24px;
+    width: 268px;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+
+}
+
+.header__blue-box span {
+    color: white;
+}
+
+.button {
+    font-family: "Fira sans";
+    padding: 0.5rem 1rem; 
+    background-color: white;
+    border-radius: 100px;
+    border: none;
+    width: 131px;
+    margin-left: 5rem;
+
+}
+
+.header__orange-box {
+    
+    height: 272px;
+    background-color: rgba(241, 121, 73, 1);
+    grid-column: 4 / span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__orange-box p {
+    font-family: "Fira sans";
+    font-size: 11px;
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.5)
+}
+
+.header__orange-box h2 {
+    font-family: "Frank Ruhl Libre";
+    color: white; 
+    font-size: 32px;
+    font-weight: 900;
+}
+
+
+.header__yellow-box {
+    height: 272px;
+    background-color: rgba(255, 185, 57, 1);
+    grid-column: 4 / span 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__yellow-box p {
+    font-family: "Fira sans";
+    font-size: 11px;
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.5)
+}
+
+.header__yellow-box h2 {
+    font-family: "Frank Ruhl Libre";
+    color: white; 
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.header__nav nav ul a li {
+    font-family: "Fira sans";
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+    list-style-type: none;
+
+}
+
+.header__nav {
+    grid-column: 2;
+}
