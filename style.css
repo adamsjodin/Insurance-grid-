@@ -165,4 +165,59 @@ text-decoration: none;
 
 /* ---MAIN--- */
 
+.large__gray {
+    background-color: #A9A19E;
+    height: 612px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+main section h2 {
+    color: white;
+    font-size: 45px;
+    letter-spacing: -0.02em;
+    font-weight: 900;
+    line-height: 100%;
+    font-family: "Frank Ruhl Libre";
+    width: 314px;
+    margin-bottom: 3rem;
+}
+
+main section p {
+    font-size: 14px;
+    font-family: "Fira Sans";
+    width: 280px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+main section .button {
+    margin-left: 0;
+}
+
+.large__yellow {
+    background-color: aqua;
+}
+
+.cards {
+    display: flex;
+}
+
+.card div {
+    width: 236px;
+    height: 150px;
+    background-color: blue;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    width: 256px;
+    height: 308px;
+}
+
+.card img {
+    width: 50%;
+    overflow-y: hidden;
+}
