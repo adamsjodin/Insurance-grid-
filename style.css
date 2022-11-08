@@ -26,7 +26,7 @@
     background-image: url("grupparbete-examination-main/img/family.png");
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position: bottom right;
+    background-position: bottom 0 right 2%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
