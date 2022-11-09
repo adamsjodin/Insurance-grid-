@@ -13,6 +13,23 @@
     margin: auto;
 }
 
+.button {
+    font-family: "Fira sans";
+    font-size: 0.625rem;
+    background-color: white;
+    border-radius: 6.25rem;
+    border: none;
+    width: 8.188rem;
+    height: 2.438rem;
+    font-weight: 700;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover, a:hover {
+    transform: scale(1.2);
+}
+
+
 /* ---HEADER---  */
 
 .header {
@@ -21,7 +38,7 @@
 }
 
 .header__blue-box {
-    height: 544px;
+    height: 34rem;
     background-color: rgba(199, 221, 234, 1);
     grid-column: 1 / span 3;
     grid-row: 1 / span 2;
@@ -37,20 +54,20 @@
 
 .header__blue-box h1 {
     font-family: "Frank Ruhl Libre";
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 900;
     letter-spacing: -0.02em;
-    width: 314px;
+    width: 19.625rem;
     margin-bottom: 1rem;
     margin-left: 5rem;
 }
 
 .header__blue-box p {
     font-family: "Fira sans";
-    font-size: 14px;
+    font-size: 0.875rem;
     color: rgba(0, 0, 0, 0.6);
-    line-height: 24px;
-    width: 268px;
+    line-height: 1.5rem;
+    width: 16.75rem;
     margin-bottom: 3rem;
     margin-left: 5rem;
 }
@@ -59,21 +76,12 @@
     color: white;
 }
 
-.button {
-    font-family: "Fira sans";
-    font-size: 10px;
-    background-color: white;
-    border-radius: 100px;
-    border: none;
-    width: 131px;
-    height: 39px;
+.header__blue-box .button {
     margin-left: 5rem;
-    font-weight: 700;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-.header__orange-box {
-    height: 272px;
+.header__orange-box, .header__yellow-box {
+    height: 17rem;
     background-color: rgba(241, 121, 73, 1);
     grid-column: 4 / span 3;
     display: flex;
@@ -82,55 +90,28 @@
     align-items: center;
 }
 
-.header__orange-box p {
+.header__orange-box p, .header__yellow-box p {
     font-family: "Fira sans";
-    font-size: 11px;
+    font-size: 0.688rem;
     font-weight: 700;
     color:rgba(0, 0, 0, 0.5)
 }
 
-.header__orange-box h2 {
+.header__orange-box h2, .header__yellow-box h2 {
     font-family: "Frank Ruhl Libre";
     color: white; 
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
 }
 
 .header__yellow-box {
-    height: 272px;
     background-color: rgba(255, 185, 57, 1);
-    grid-column: 4 / span 3;
     grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.header__yellow-box p {
-    font-family: "Fira sans";
-    font-size: 11px;
-    font-weight: 700;
-    color:rgba(0, 0, 0, 0.5)
-}
-
-.header__yellow-box h2 {
-    font-family: "Frank Ruhl Libre";
-    color: white; 
-    font-size: 32px;
-    font-weight: 900;
-}
 
 /* ---HEADER NAV---  */
 
-nav ul a li {
-    font-family: "Fira sans";
-    font-size: 12px;
-    font-weight: 600;
-    color:#8D8D8D;
-    list-style-type: none;
-    margin: 1rem;
-}
 
 nav {
     grid-column: 1 / span 6;
@@ -162,23 +143,25 @@ a:link {
 text-decoration: none;
 }
 
-.header__nav-home {
+nav ul a li {
+    font-family: "Fira sans";
+    font-size: 0.75rem;
+    font-weight: 600;
+    color:#8D8D8D;
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.header__active {
     color: black;
 }
 
 /* ---MAIN--- */
 
-.large__gray {
-    background-color: #A9A19E;
-    height: 612px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
 
 main section h2 {
     color: white;
-    font-size: 45px;
+    font-size: 2.813rem;
     letter-spacing: -0.02em;
     font-weight: 900;
     line-height: 100%;
@@ -186,31 +169,48 @@ main section h2 {
     margin-bottom: 3rem;
 }
 
-main .large__gray h2 {
-    width: 314px;
-    margin-top: 100px;
-}
-
 main section p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Fira Sans";
     font-weight: 500;
     color: rgba(0, 0, 0, 0.6);
-}
-
-main .large__gray p {
-    width: 280px;
-    margin-top: 100px;
 }
 
 main section .button {
     margin-left: 0;
 }
 
+/* Gray section  */
+
+
+.large__gray {
+    background-color: #A9A19E;
+    height: 38.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main .large__gray h2 {
+    width: 19.625rem;
+    margin-top: 6.25rem;
+}
+
+main .large__gray p {
+    width: 17.5rem;
+    margin-top: 6.25rem;
+}
+
+/* Yellow section  */
+
+
 .large__yellow {
     background-color: #FAB131;
     text-align: center;
 }
+
+/* Yellow section - Cards  */
+
 
 .cards {
     display: flex;
@@ -218,27 +218,22 @@ main section .button {
     margin-bottom: 4rem;
 }
 
-.about {
-    width: 442px;
-    margin: auto;
-}
-
-.about p {
-    padding-bottom: 2rem;
-}
-
-.about p:last-child {
-    padding-bottom: 15rem;
-}
-
-
-.about h2 {
-    margin: 1rem;
+.card {
+    background-color: white;
+    border-radius: 5px;
+    width: 16rem;
+    height: 19.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -9rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card div {
-    width: 236px;
-    height: 150px;
+    width: 14.75rem;
+    height: 9.375rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -249,24 +244,16 @@ main section .button {
     font-family: "Fira Sans";
 }
 
-.card {
-    background-color: white;
-    border-radius: 5px;
-    width: 256px;
-    height: 308px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -9rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+.card:nth-child(1) div {
+    background-color: #C7DDEA;
 }
 
-.card p {
-    font-size: 11px;
-    line-height: 18px;
-    font-weight: 700;
-    padding: 30px;
+.card:nth-child(2) div {
+    background-color: #FAB131;
+}
+
+.card:nth-child(3) div {
+    background-color: #F17949;
 }
 
 .card img {
@@ -282,48 +269,54 @@ main section .button {
     width: 50%
 }
 
-.card:nth-child(1) div {
-    background-color: #C7DDEA;
+.card h4 {
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: rgba(0, 0, 0, 0.9);
 }
 
-.card:nth-child(2) div {
-    background-color: #FAB131;
+.card p {
+    font-size: 0.688rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+    padding: 1.875rem;
 }
 
-.card:nth-child(3) div {
-    background-color: #F17949;
+
+/* Yellow section - About  */
+
+.about {
+    width: 27.625rem;
+    margin: auto;
 }
+
+.about h2 {
+    margin: 1rem;
+}
+
+.about p {
+    padding-bottom: 2rem;
+}
+
+.about p:last-child {
+    padding-bottom: 15rem;
+}
+
+
+/* Section - Boxes  */
+
 
 .boxes {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 340px;
+    grid-auto-rows: 21.25rem;
 }
 
 .box {
     grid-column: span 2;
-
-}
-
-.box h3 {
-    color: rgba(0, 0, 0, 0.4);
-    margin: 1rem;
-    font-size: 35px;
-    letter-spacing: -0.02em;
-}
-
-.box h2 {
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 45px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    margin: 7rem 0;
-}
-
-.box p {
-    color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    margin-top: 30%;
 }
 
 .box:nth-child(1) {
@@ -338,13 +331,36 @@ main section .button {
     background-color: #F17949;
 }
 
+.box h2 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2.813rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 7rem 0;
+}
+
+.box h3 {
+    color: rgba(0, 0, 0, 0.4);
+    margin: 1rem;
+    font-size: 2.188rem;
+    letter-spacing: -0.02em;
+}
+
+.box p {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 30%;
+}
+
+/* FOOTER */
+
 footer nav {
     background-color: #A9A19E;
     font-family: 'Fira Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 1.063rem;
+    line-height: 1.25rem;
     color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
@@ -357,18 +373,21 @@ footer nav a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.7);;
 }
 
 footer div {
     background-color: #777574;
-    height: 340px;
+    height: 21.25rem;
 }
 
 /*Contact page */
 
+/* HEADER  */
+
 
 .header__contact-starter {
-    height: 340px;
+    height: 21.25rem;
     background-color: rgba(199, 221, 234, 1);
     grid-column: 1 / span 6;
     background-image: url("grupparbete-examination-main/img/man-and-child.png");
@@ -383,15 +402,18 @@ footer div {
 .header__contact-starter h1 {
     font-family: 'Frank Ruhl Libre';
     font-weight: 900;
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 2.813rem;
+    line-height: 2.813rem;
     letter-spacing: -0.02em;
 
 }
 
+/* Gray section  */
+
+
 .large__gray-contact {
     background-color: #A9A19E;
-    height: 612px;
+    height: 38.25rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
@@ -399,11 +421,14 @@ footer div {
 .large__gray-contact h2 {
     grid-column: 1 / span 3;
     margin: auto;
-    margin-top: 145px;
-    max-width: 314px;
+    margin-top: 9.063rem;
+    max-width: 19.625rem;
 }
 
-.form {
+/* Gray section - Form  */
+
+
+.form__container {
     grid-column: 4 / span 2;
     margin: auto 0 ;
 }
@@ -411,14 +436,14 @@ footer div {
 form {
     display: flex;
     flex-direction: column;
-    height: 327px
+    height: 20.438rem;
 }
 
 label {
     font-family: 'Fira Sans';
     font-weight: 700;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     letter-spacing: -0.02em;
     color: #FFFFFF;
     opacity: 0.7;
@@ -428,19 +453,19 @@ input, textarea {
     border: 0;
     border-radius: 2px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 form .email {
-    min-height: 40px;
+    min-height: 2.5rem;
 }
 
 form .message {
-    min-height: 166px;
+    min-height: 10.375rem;
     font-family: 'Fira Sans';
     font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     letter-spacing: -0.02em;
     padding: 1rem;
     color: #000;
@@ -451,37 +476,40 @@ form .button {
     align-self: flex-end;
 }
 
+/* Info section  */
+
 .map {
     background-image: url("grupparbete-examination-main/img/map-contact.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 407px;
+    min-height: 25.438rem;
     display: flex;
 }
 
 .map__yellow-box {
     background-color: #FAB131;
-    width: 323px;
-    height: 206px;
+    width: 20.188rem;
+    height: 12.875rem;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    margin-top: 45px;
-    margin-left: 86px;
+    margin-top: 2.813rem;
+    margin-left: 5.375rem;
 }
 
 .map__yellow-box h2 {
     margin-bottom: 0.5rem;
 }
+
 .map__yellow-box p {
     font-family: 'Fira Sans';
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .map img {
     margin: auto; 
-    margin-right: 466px;
+    margin-right: 29.125rem;
 }
 
