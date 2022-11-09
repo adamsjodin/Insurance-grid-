@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Frank+Ruhl+Libre:wght@700;900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -67,6 +68,7 @@
     border: none;
     width: 131px;
     margin-left: 5rem;
+    font-weight: 700;
 }
 
 .header__orange-box {
@@ -347,3 +349,95 @@ footer div {
     background-color: #777574;
     height: 340px;
 }
+
+/*Contact page */
+
+
+.header__contact-starter {
+    height: 340px;
+    background-color: rgba(199, 221, 234, 1);
+    grid-column: 1 / span 6;
+    background-image: url("grupparbete-examination-main/img/man-and-child.png");
+    background-repeat: no-repeat;
+    background-size: 18%;
+    background-position: bottom 0 right 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__contact-starter h1 {
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -0.02em;
+
+}
+
+.large__gray-contact {
+    background-color: #A9A19E;
+    height: 612px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.large__gray-contact h2 {
+    grid-column: 1 / span 3;
+    margin: auto;
+    margin-top: 145px;
+    max-width: 314px;
+}
+
+.form {
+    grid-column: 4 / span 2;
+    margin: auto 0 ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 327px
+}
+
+label {
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+input, textarea {
+    border: 0;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+form .email {
+    min-height: 40px;
+}
+
+form .message {
+    min-height: 166px;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    padding: 1rem;
+    color: #000;
+    resize: none;
+}
+
+form .button {
+    padding: 1rem 0.5rem;
+    align-self: flex-end;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
