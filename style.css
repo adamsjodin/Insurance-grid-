@@ -6,9 +6,9 @@
     padding: 0;
 }
 
-html {
+body {
     background-color: #E5E5E5
-} /*Ändrat bakgrund på sidan*/
+}
 
 .wrapper {
     height: 100vh;
@@ -26,7 +26,7 @@ html {
     width: 8.188rem;
     height: 2.438rem;
     font-weight: 700;
-    line-height: 0.75rem; /*Lagt till*/
+    line-height: 0.75rem;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -52,8 +52,6 @@ html {
     background-position: bottom 0 right 2%;
     padding-top: 4.438rem;
     padding-left: 6rem;
-    /*Ändrat från flex till att använda padding för rätt justering, 
-    även tagit bort margin på varje barn och använder padding här istället för vänsterjusteringen*/
 }
 
 .header__blue-box h1 {
@@ -63,13 +61,13 @@ html {
     letter-spacing: -0.02em;
     width: 19.625rem;
     margin-bottom: 1rem;
-    line-height: 2.813rem; /*Lagt till*/
+    line-height: 2.813rem;
 }
 
 .header__blue-box p {
     font-family: "Fira sans";
     font-size: 0.875rem;
-    font-weight: 500; /*Lagt till*/
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.6);
     line-height: 1.5rem;
     width: 16.75rem;
@@ -94,7 +92,7 @@ html {
     font-family: "Fira sans";
     font-size: 0.688rem;
     font-weight: 700;
-    line-height: 0.813; /*Lagt till*/
+    line-height: 0.813;
     color:rgba(0, 0, 0, 0.5)
 }
 
@@ -150,9 +148,9 @@ nav ul a li {
     font-weight: 600;
     color:#8D8D8D;
     list-style-type: none;
-    line-height: 0.75rem; /*Lagt till*/
-    letter-spacing: -0.02em; /*Lagt till*/
-    margin: 1.5rem; /*Justerat*/
+    line-height: 0.75rem; 
+    letter-spacing: -0.02em; 
+    margin: 1.5rem;
 }
 
 .header__active {
@@ -200,7 +198,7 @@ main .large__gray h2 {
 main .large__gray p {
     width: 17.5rem;
     margin-top: 6.25rem;
-    line-height: 1.5rem; /*Lagt till*/
+    line-height: 1.5rem;
 }
 
 
@@ -218,7 +216,7 @@ main .large__gray p {
     margin-bottom: 4rem;
 }
 
-.card { /*Justerat storlek på divar, bilder och justerat innehåll med padding/margin*/
+.card { 
     background-color: white;
     border-radius: 5px;
     width: 16rem;
@@ -280,7 +278,7 @@ main .large__gray p {
 }
 
 .card p {
-    font-family: 'Frank Ruhl Libre'; /*La till*/
+    font-family: 'Frank Ruhl Libre';
     font-size: 0.688rem;
     line-height: 1.125rem;
     font-weight: 700;
@@ -304,7 +302,7 @@ main .large__gray p {
 }
 
 .about p:last-child {
-    padding-bottom: 10rem; /*^Justerat*/
+    padding-bottom: 10rem;
 }
 
 
@@ -342,10 +340,10 @@ main .large__gray p {
 
 .box h3 {
     color: rgba(0, 0, 0, 0.4);
-    margin: 2rem; /*justerat*/
+    margin: 2rem; 
     font-size: 2.188rem;
     letter-spacing: -0.02em;
-    font-family: 'Frank Ruhl Libre'; /*lagt till*/
+    font-family: 'Frank Ruhl Libre'; 
     line-height: 2.188rem;
     font-weight: 900;
 }
